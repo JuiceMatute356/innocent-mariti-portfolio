@@ -18,7 +18,7 @@ export function Hero() {
             variants={fadeUpVariant}
             className="text-[#f59e0b] text-xs tracking-[0.3em] uppercase font-medium"
           >
-            Sales Leader · Risk & Compliance · Automation
+            AI Automation Engineer
           </motion.p>
 
           {/* Main headline */}
@@ -36,10 +36,10 @@ export function Hero() {
             variants={fadeUpVariant}
             className="text-[#f5f0e8]/50 text-xl max-w-xl leading-relaxed"
           >
-            12+ years turning compliance-heavy environments into{" "}
-            <em className="text-[#f59e0b] not-italic">revenue engines</em>.
-            Mercedes-Benz. Hyundai. Williams Hunt. Now building the future of
-            Risk & Compliance.
+            I build and run{" "}
+            <em className="text-[#f59e0b] not-italic">production AI systems</em>
+            . Self-hosted n8n, Claude, and webhook infrastructure, on real
+            uptime, not a demo.
           </motion.p>
 
           {/* CTAs */}
@@ -67,7 +67,8 @@ export function Hero() {
               </svg>
             </a>
             <a
-              href="#contact"
+              href="/Innocent_Mariti_CV_AI_Automation_Engineer.pdf"
+              download
               className="inline-flex items-center gap-2 text-[#f5f0e8]/60 hover:text-[#f5f0e8] font-medium px-6 py-3 border border-white/10 rounded-full hover:border-white/30 transition-all"
             >
               Download CV
@@ -80,10 +81,10 @@ export function Hero() {
             className="flex flex-wrap gap-8 pt-6 border-t border-white/5"
           >
             {[
-              { n: "12+", label: "Years Experience" },
-              { n: "5", label: "Premium Dealerships" },
-              { n: "NCA", label: "Compliance Expert" },
-              { n: "POPIA", label: "Certified Aware" },
+              { n: "12", label: "Active Workflows" },
+              { n: "489", label: "Node Flagship Bot" },
+              { n: "99.96%", label: "7-Day Success Rate" },
+              { n: "128d", label: "Uptime" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-black text-[#f59e0b]">

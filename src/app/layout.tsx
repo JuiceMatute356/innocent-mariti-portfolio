@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Website Showcase: Three Premium Designs",
+  title: "Innocent Mariti | AI Automation Engineer",
   description:
-    "A showcase of three production-ready website designs: portfolio, corporate, and interactive.",
+    "n8n automation, self-hosted infrastructure, and production AI systems built and run by Innocent Mariti.",
 };
 
 export default function RootLayout({

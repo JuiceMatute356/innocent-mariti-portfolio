@@ -11,18 +11,18 @@ import {
 import Image from "next/image";
 
 const skills = [
+  "n8n Automation",
+  "Python",
+  "Claude / Anthropic",
+  "WhatsApp & Telegram Bots",
+  "Webhook & Event-Driven Design",
+  "Docker & Linux VPS",
   "NCA Compliance",
   "POPIA",
   "OEM Governance",
   "F&I Deal Structuring",
   "Audit Readiness",
   "Credit Risk Assessment",
-  "CRM Management",
-  "n8n Automation",
-  "Python",
-  "Telegram Bots",
-  "Digital Lead Management",
-  "AutoTrader / Cars.co.za",
 ];
 
 export function AboutSection() {
@@ -43,28 +43,31 @@ export function AboutSection() {
               About Me
             </p>
             <h2 className="text-5xl font-black text-[#f5f0e8] tracking-tight mb-6">
-              Where compliance
+              From the sales floor
               <br />
-              meets{" "}
-              <span className="text-[#f5f0e8]/30">ambition</span>
+              to{" "}
+              <span className="text-[#f5f0e8]/30">production systems</span>
             </h2>
             <div className="space-y-4 text-[#f5f0e8]/50 text-base leading-relaxed">
               <p>
-                Based in Honeydew, Gauteng, I&apos;ve spent 12+ years in
-                South Africa&apos;s most demanding dealership environments:
-                Mercedes-Benz, Hyundai, Williams Hunt, and Digi-Cars. Every
-                deal requires compliance, precision, and trust.
+                Based in Johannesburg, South Africa. No computer science
+                degree, the systems are live and the evidence is public: a
+                self-hosted n8n stack running 54 workflows, Claude and OpenAI
+                integrations, WhatsApp and Telegram bots, and the
+                infrastructure behind all of it.
               </p>
               <p>
-                I&apos;m not just a salesperson. I understand NCA frameworks,
-                POPIA obligations, audit-trail documentation, and OEM governance
-                from the inside. I also build automation tools to make compliance
-                faster and smarter.
+                12+ years in South Africa&apos;s most demanding dealership
+                environments taught me what compliance, precision, and trust
+                actually mean under pressure. I now build the automation that
+                replaces the manual version of that work: NCA and POPIA-aware
+                systems, audit-trail logging, and guardrails that catch a
+                wrong number before a customer ever sees it.
               </p>
               <p>
-                My goal: move into a{" "}
-                <span className="text-[#f59e0b]">Risk & Compliance</span> role
-                where I can apply this lived experience at a strategic level.
+                My goal:{" "}
+                <span className="text-[#f59e0b]">AI Automation Engineer</span>{" "}
+                roles building and operating production AI systems.
               </p>
             </div>
 

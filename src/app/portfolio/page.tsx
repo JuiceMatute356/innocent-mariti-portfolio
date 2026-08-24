@@ -48,44 +48,13 @@ export default function PortfolioPage() {
 
       {/* References strip */}
       <section className="py-16 px-6 bg-[#161616] border-t border-white/5">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#f5f0e8]/20 text-xs tracking-widest uppercase mb-8 text-center">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-[#f5f0e8]/20 text-xs tracking-widest uppercase mb-3">
             Professional References
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              {
-                name: "Manie Du Toit",
-                role: "Pre-Owned Sales Manager",
-                company: "Williams Hunt Fourways",
-                phone: "082 707 4363",
-              },
-              {
-                name: "Salman Pooche",
-                role: "Sales Manager",
-                company: "Digi-Cars (iCars Technologies)",
-                phone: "083 455 9979",
-              },
-              {
-                name: "Xane Peacock",
-                role: "Sales Manager",
-                company: "Mercedes-Benz",
-                phone: "083 708 6999",
-              },
-            ].map((ref) => (
-              <div
-                key={ref.name}
-                className="bg-white/3 border border-white/10 rounded-xl p-5"
-              >
-                <p className="text-[#f5f0e8] font-semibold text-sm">
-                  {ref.name}
-                </p>
-                <p className="text-[#f5f0e8]/40 text-xs mt-0.5">{ref.role}</p>
-                <p className="text-[#f59e0b]/70 text-xs">{ref.company}</p>
-                <p className="text-[#f5f0e8]/30 text-xs mt-2">{ref.phone}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-[#f5f0e8]/40 text-sm">
+            Available on request.
+          </p>
         </div>
       </section>
 
@@ -93,7 +62,7 @@ export default function PortfolioPage() {
       <footer className="py-8 px-6 border-t border-white/5">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-[#f5f0e8]/20 text-sm">
-            © 2025 Innocent Kelebogile Mariti · Honeydew, Gauteng
+            © 2026 Innocent Kelebogile Mariti · Johannesburg, South Africa
           </span>
           <div className="flex gap-6">
             <a
@@ -103,16 +72,16 @@ export default function PortfolioPage() {
               Email
             </a>
             <a
-              href="tel:0735672508"
+              href="https://linkedin.com/in/innocent-mariti-27a4b552"
               className="text-[#f5f0e8]/20 hover:text-[#f59e0b] text-sm transition-colors"
             >
-              Call
+              LinkedIn
             </a>
             <a
-              href="/interactive"
-              className="text-[#f5f0e8]/20 hover:text-[#00f5ff] text-sm transition-colors"
+              href="https://github.com/JuiceMatute356"
+              className="text-[#f5f0e8]/20 hover:text-[#f59e0b] text-sm transition-colors"
             >
-              Tech Showcase →
+              GitHub
             </a>
           </div>
         </div>

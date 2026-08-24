@@ -11,10 +11,14 @@ export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1200));
+    const subject = encodeURIComponent(`Portfolio contact from ${form.name}`);
+    const body = encodeURIComponent(
+      `${form.message}\n\nFrom ${form.name} (${form.email})`
+    );
+    window.location.href = `mailto:innocentmariti@gmail.com?subject=${subject}&body=${body}`;
     setIsSubmitting(false);
     setSubmitted(true);
   };
@@ -41,9 +45,8 @@ export function ContactForm() {
               opportunity
             </h2>
             <p className="text-[#f5f0e8]/40 text-base leading-relaxed mb-8">
-              Open to Risk & Compliance roles, Sales Management positions, and
-              consulting opportunities across South Africa. I respond within 24
-              hours.
+              Open to AI Automation Engineer roles, forward-deployed and
+              solutions engineering, and automation consulting.
             </p>
 
             <div className="space-y-5 text-sm">
@@ -55,15 +58,15 @@ export function ContactForm() {
                   href: "mailto:innocentmariti@gmail.com",
                 },
                 {
-                  icon: "📞",
-                  label: "Phone",
-                  value: "073 567 2508",
-                  href: "tel:0735672508",
+                  icon: "💼",
+                  label: "LinkedIn",
+                  value: "linkedin.com/in/innocent-mariti-27a4b552",
+                  href: "https://linkedin.com/in/innocent-mariti-27a4b552",
                 },
                 {
                   icon: "📍",
                   label: "Location",
-                  value: "Honeydew, Gauteng, SA",
+                  value: "Johannesburg, South Africa",
                   href: null,
                 },
                 {
@@ -95,11 +98,11 @@ export function ContactForm() {
             {/* CV download hint */}
             <div className="mt-8 p-4 rounded-xl border border-[#f59e0b]/20 bg-[#f59e0b]/5">
               <p className="text-[#f59e0b] text-xs font-semibold mb-1">
-                📄 CV Available on Request
+                📄 Full CV Above
               </p>
               <p className="text-[#f5f0e8]/40 text-xs">
-                12+ year full career history, references from Mercedes-Benz,
-                Williams Hunt & Digi-Cars included.
+                12+ year full career history. References available on
+                request.
               </p>
             </div>
           </motion.div>
@@ -116,12 +119,19 @@ export function ContactForm() {
                 animate={{ opacity: 1, y: 0 }}
                 className="flex flex-col items-center justify-center h-full text-center py-16"
               >
-                <div className="text-5xl mb-4">✅</div>
+                <div className="text-5xl mb-4">📧</div>
                 <h3 className="text-2xl font-bold text-[#f5f0e8] mb-2">
-                  Message received!
+                  Opening your email app
                 </h3>
                 <p className="text-[#f5f0e8]/40">
-                  I&apos;ll be in touch within 24 hours.
+                  If it did not open, email me directly at{" "}
+                  <a
+                    href="mailto:innocentmariti@gmail.com"
+                    className="text-[#f59e0b]"
+                  >
+                    innocentmariti@gmail.com
+                  </a>
+                  .
                 </p>
               </motion.div>
             ) : (
