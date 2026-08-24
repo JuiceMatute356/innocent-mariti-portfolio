@@ -3,6 +3,7 @@ import { Hero } from "@/components/portfolio/Hero";
 import { ProjectGrid } from "@/components/portfolio/ProjectGrid";
 import { AboutSection } from "@/components/portfolio/AboutSection";
 import { ContactForm } from "@/components/portfolio/ContactForm";
+import { profile } from "@/data/profile";
 
 export default function PortfolioPage() {
   return (
@@ -62,23 +63,23 @@ export default function PortfolioPage() {
       <footer className="py-8 px-6 border-t border-white/5">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="text-[#f5f0e8]/20 text-sm">
-            © 2026 Innocent Kelebogile Mariti · Johannesburg, South Africa
+            © 2026 {profile.fullName} · {profile.location}
           </span>
           <div className="flex gap-6">
             <a
-              href="mailto:innocentmariti@gmail.com"
+              href={`mailto:${profile.email}`}
               className="text-[#f5f0e8]/20 hover:text-[#f59e0b] text-sm transition-colors"
             >
               Email
             </a>
             <a
-              href="https://linkedin.com/in/innocent-mariti-27a4b552"
+              href={profile.linkedinUrl}
               className="text-[#f5f0e8]/20 hover:text-[#f59e0b] text-sm transition-colors"
             >
               LinkedIn
             </a>
             <a
-              href="https://github.com/JuiceMatute356"
+              href={profile.githubUrl}
               className="text-[#f5f0e8]/20 hover:text-[#f59e0b] text-sm transition-colors"
             >
               GitHub

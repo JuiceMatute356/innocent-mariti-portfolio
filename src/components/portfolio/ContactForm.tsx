@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeUpVariant, staggerContainer } from "@/lib/animationVariants";
+import { profile } from "@/data/profile";
 
 export function ContactForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -18,7 +19,7 @@ export function ContactForm() {
     const body = encodeURIComponent(
       `${form.message}\n\nFrom ${form.name} (${form.email})`
     );
-    window.location.href = `mailto:innocentmariti@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
     setIsSubmitting(false);
     setSubmitted(true);
   };
@@ -45,8 +46,7 @@ export function ContactForm() {
               opportunity
             </h2>
             <p className="text-[#f5f0e8]/40 text-base leading-relaxed mb-8">
-              Open to AI Automation Engineer roles, forward-deployed and
-              solutions engineering, and automation consulting.
+              {profile.contactIntro}
             </p>
 
             <div className="space-y-5 text-sm">
@@ -54,19 +54,19 @@ export function ContactForm() {
                 {
                   icon: "📧",
                   label: "Email",
-                  value: "innocentmariti@gmail.com",
-                  href: "mailto:innocentmariti@gmail.com",
+                  value: profile.email,
+                  href: `mailto:${profile.email}`,
                 },
                 {
                   icon: "💼",
                   label: "LinkedIn",
-                  value: "linkedin.com/in/innocent-mariti-27a4b552",
-                  href: "https://linkedin.com/in/innocent-mariti-27a4b552",
+                  value: profile.linkedin,
+                  href: profile.linkedinUrl,
                 },
                 {
                   icon: "📍",
                   label: "Location",
-                  value: "Johannesburg, South Africa",
+                  value: profile.location,
                   href: null,
                 },
                 {
@@ -126,10 +126,10 @@ export function ContactForm() {
                 <p className="text-[#f5f0e8]/40">
                   If it did not open, email me directly at{" "}
                   <a
-                    href="mailto:innocentmariti@gmail.com"
+                    href={`mailto:${profile.email}`}
                     className="text-[#f59e0b]"
                   >
-                    innocentmariti@gmail.com
+                    {profile.email}
                   </a>
                   .
                 </p>

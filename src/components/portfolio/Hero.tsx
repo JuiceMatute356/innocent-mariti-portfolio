@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { staggerContainer, fadeUpVariant } from "@/lib/animationVariants";
+import { profile } from "@/data/profile";
 
 export function Hero() {
   return (
@@ -18,7 +19,7 @@ export function Hero() {
             variants={fadeUpVariant}
             className="text-[#f59e0b] text-xs tracking-[0.3em] uppercase font-medium"
           >
-            AI Automation Engineer
+            {profile.positioning}
           </motion.p>
 
           {/* Main headline */}
@@ -36,10 +37,7 @@ export function Hero() {
             variants={fadeUpVariant}
             className="text-[#f5f0e8]/50 text-xl max-w-xl leading-relaxed"
           >
-            I build and run{" "}
-            <em className="text-[#f59e0b] not-italic">production AI systems</em>
-            . Self-hosted n8n, Claude, and webhook infrastructure, on real
-            uptime, not a demo.
+            {profile.heroSubtext}
           </motion.p>
 
           {/* CTAs */}
@@ -67,7 +65,7 @@ export function Hero() {
               </svg>
             </a>
             <a
-              href="/Innocent_Mariti_CV_AI_Automation_Engineer.pdf"
+              href={profile.cvFile}
               download
               className="inline-flex items-center gap-2 text-[#f5f0e8]/60 hover:text-[#f5f0e8] font-medium px-6 py-3 border border-white/10 rounded-full hover:border-white/30 transition-all"
             >
@@ -80,12 +78,7 @@ export function Hero() {
             variants={fadeUpVariant}
             className="flex flex-wrap gap-8 pt-6 border-t border-white/5"
           >
-            {[
-              { n: "12", label: "Active Workflows" },
-              { n: "489", label: "Node Flagship Bot" },
-              { n: "99.96%", label: "7-Day Success Rate" },
-              { n: "128d", label: "Uptime" },
-            ].map((stat) => (
+            {profile.stats.map((stat) => (
               <div key={stat.label}>
                 <div className="text-2xl font-black text-[#f59e0b]">
                   {stat.n}

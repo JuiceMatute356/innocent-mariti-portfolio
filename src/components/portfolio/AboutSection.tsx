@@ -9,21 +9,9 @@ import {
   slideInRight,
 } from "@/lib/animationVariants";
 import Image from "next/image";
+import { profile } from "@/data/profile";
 
-const skills = [
-  "n8n Automation",
-  "Python",
-  "Claude / Anthropic",
-  "WhatsApp & Telegram Bots",
-  "Webhook & Event-Driven Design",
-  "Docker & Linux VPS",
-  "NCA Compliance",
-  "POPIA",
-  "OEM Governance",
-  "F&I Deal Structuring",
-  "Audit Readiness",
-  "Credit Risk Assessment",
-];
+const skills = profile.skills;
 
 export function AboutSection() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 });
@@ -49,24 +37,11 @@ export function AboutSection() {
               <span className="text-[#f5f0e8]/30">production systems</span>
             </h2>
             <div className="space-y-4 text-[#f5f0e8]/50 text-base leading-relaxed">
-              <p>
-                Based in Johannesburg, South Africa. No computer science
-                degree, the systems are live and the evidence is public: a
-                self-hosted n8n stack running 54 workflows, Claude and OpenAI
-                integrations, WhatsApp and Telegram bots, and the
-                infrastructure behind all of it.
-              </p>
-              <p>
-                12+ years in South Africa&apos;s most demanding dealership
-                environments taught me what compliance, precision, and trust
-                actually mean under pressure. I now build the automation that
-                replaces the manual version of that work: NCA and POPIA-aware
-                systems, audit-trail logging, and guardrails that catch a
-                wrong number before a customer ever sees it.
-              </p>
+              <p>{profile.aboutIntro}</p>
+              <p>{profile.aboutBackground}</p>
               <p>
                 My goal:{" "}
-                <span className="text-[#f59e0b]">AI Automation Engineer</span>{" "}
+                <span className="text-[#f59e0b]">{profile.aboutGoal}</span>{" "}
                 roles building and operating production AI systems.
               </p>
             </div>
