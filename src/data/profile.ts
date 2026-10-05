@@ -1,51 +1,51 @@
 // Single source of truth for portfolio copy and metrics.
-// Facts must match ~/.claude/skills/innocent-cv-context/SKILL.md exactly.
+// Facts must match the current master CV (Documents\Innocent_Mariti_CV.pdf) exactly.
 // Re-verify metrics before editing: they are point-in-time, not static.
+// Trustee role is deliberately NOT on this public site (Innocent, 2026-10-05).
 
 export const profile = {
   name: "Innocent Mariti",
   fullName: "Innocent Kelebogile Mariti",
-  positioning: "AI Automation Engineer",
+  positioning: "Sales Team Leader | Vehicle Sales and F&I",
   location: "Johannesburg, South Africa",
   email: "innocentmariti@gmail.com",
   linkedin: "linkedin.com/in/innocent-mariti-27a4b552",
   linkedinUrl: "https://linkedin.com/in/innocent-mariti-27a4b552",
   github: "github.com/JuiceMatute356",
   githubUrl: "https://github.com/JuiceMatute356",
-  cvFile: "/Innocent_Mariti_CV_AI_Automation_Engineer.pdf",
+  cvFile: "/Innocent_Mariti_CV.pdf",
 
   heroSubtext:
-    "I build and run production AI systems. Self-hosted n8n, Claude, and webhook infrastructure, on real uptime, not a demo.",
+    "Twelve years selling and structuring vehicle finance deals. Second in charge of a team of nine at Hyundai, 133% of target, 90% of deals converted to finance. I also build the sales and finance tools my team uses.",
 
-  // Verified live against the Contabo box on 2026-08-20. Re-verify before reusing.
   stats: [
-    { n: "12", label: "Active Workflows" },
-    { n: "489", label: "Node Flagship Bot" },
-    { n: "99.96%", label: "7-Day Success Rate" },
-    { n: "128d", label: "Uptime" },
+    { n: "133%", label: "Of Target at Hyundai" },
+    { n: "90%", label: "Deals Converted to Finance" },
+    { n: "3rd of 9", label: "On the Sales Floor" },
+    { n: "12", label: "Years in Vehicle Sales" },
   ],
 
   aboutIntro:
-    "Based in Johannesburg, South Africa. No computer science degree, the systems are live and the evidence is public: a self-hosted n8n stack running 54 workflows, Claude and OpenAI integrations, WhatsApp and Telegram bots, and the infrastructure behind all of it.",
+    "Based in Johannesburg, South Africa. Vehicle sales team leader with twelve years across Nissan, Mercedes-Benz, a digital-first dealer group and Hyundai, including second-in-charge responsibility for a team of nine. NCA accredited, with hands-on experience in compliant deal structuring and credit assessment.",
   aboutBackground:
-    "12+ years in South Africa's most demanding dealership environments taught me what compliance, precision, and trust actually mean under pressure. I now build the automation that replaces the manual version of that work: NCA and POPIA-aware systems, audit-trail logging, and guardrails that catch a wrong number before a customer ever sees it.",
-  aboutGoal: "AI Automation Engineer",
+    "At Hyundai I averaged 8 units a month against a 6-unit target, coached the team, and ran daily, weekly and monthly reporting on finance applications against conversion. I also build sales and finance tools, including a live WhatsApp enquiry and finance-application assistant, that improve lead response, application completion and deal control.",
+  aboutGoal: "Sales Team Leader",
 
   skills: [
-    "n8n Automation",
-    "Python",
-    "Claude / Anthropic",
-    "WhatsApp & Telegram Bots",
-    "Webhook & Event-Driven Design",
-    "Docker & Linux VPS",
     "NCA Compliance",
-    "POPIA",
-    "OEM Governance",
     "F&I Deal Structuring",
-    "Audit Readiness",
     "Credit Risk Assessment",
+    "Team Coaching",
+    "Conversion Reporting",
+    "OEM Standards",
+    "AutoTrader & Cars.co.za Leads",
+    "Signio & Seriti",
+    "n8n Sales Automation",
+    "WhatsApp Sales Assistants",
+    "Claude / OpenAI APIs",
+    "POPIA-Aware Records",
   ],
 
   contactIntro:
-    "Open to AI Automation Engineer roles, forward-deployed and solutions engineering, and automation consulting.",
+    "Open to sales team leader and sales manager roles, F&I, fleet and automotive business development.",
 } as const;

@@ -31,10 +31,9 @@ export function AboutSection() {
               About Me
             </p>
             <h2 className="text-5xl font-black text-[#f5f0e8] tracking-tight mb-6">
-              From the sales floor
+              Built on the
               <br />
-              to{" "}
-              <span className="text-[#f5f0e8]/30">production systems</span>
+              <span className="text-[#f5f0e8]/30">sales floor</span>
             </h2>
             <div className="space-y-4 text-[#f5f0e8]/50 text-base leading-relaxed">
               <p>{profile.aboutIntro}</p>
@@ -42,7 +41,7 @@ export function AboutSection() {
               <p>
                 My goal:{" "}
                 <span className="text-[#f59e0b]">{profile.aboutGoal}</span>{" "}
-                roles building and operating production AI systems.
+                and sales manager roles in automotive retail.
               </p>
             </div>
 

@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Innocent Mariti | AI Automation Engineer",
+  title: "Innocent Mariti | Sales Team Leader, Vehicle Sales and F&I",
   description:
-    "n8n automation, self-hosted infrastructure, and production AI systems built and run by Innocent Mariti.",
+    "Vehicle sales team leader with twelve years in automotive retail, NCA accredited, who also builds the sales and finance tools his team uses.",
 };
 
 export default function RootLayout({

@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Innocent Mariti | AI Automation Engineer",
+  title: "Innocent Mariti | Sales Team Leader, Vehicle Sales and F&I",
   description:
-    "n8n automation and production AI systems, backed by 12+ years of compliance-heavy dealership experience. Self-hosted infrastructure, live production metrics.",
+    "Vehicle sales team leader with twelve years across Nissan, Mercedes-Benz, a digital-first dealer group and Hyundai. NCA accredited, 133% of target and 90% of deals converted to finance at Hyundai.",
 };
 
 export default function PortfolioLayout({
